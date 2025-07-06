@@ -2,32 +2,28 @@ import java.io.*;
 import java.util.*;
 public class practiceh {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int N = scanner.nextInt();
-        int M = scanner.nextInt();
-        int[] a = new int[M];
-        for (int i = 0; i < M; i++) {
-            a[i] = scanner.nextInt();
+        Scanner sc = new Scanner(System.in);
+       int n=sc.nextInt();
+       int a[]=new int[n];
+        for (int i = 0; i < n; i++) {
+            a[i]= sc.nextInt();
         }
-        for (int i = 0; i < M; i++) {
-            if(a[i]==0)
+        Arrays.sort(a);
+        int i=0;
+        int count=0;
+        while (i<n-1)
+        {
+            if(a[i]==a[i+1])
             {
-                if((i==0&&a[i+1]==0)||(i==M-1&&a[i-1]==0)||a[i+1]==0&&a[i-1]==0)
-                {
-                    a[i]=1;
-                    N--;
-                }
+                count++;
+                i+=2;
+            }
+            else
+            {
+                i++;
             }
         }
-        if (N == 0)
-        {
-            System.out.println("YES");
-        }
-        else {
-            System.out.println("NO");
-        }
-
-        scanner.close();
+        System.out.println(count);
 
     }
 }

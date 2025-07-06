@@ -1,5 +1,5 @@
 import java.util.*;
-public class dup {
+public class duplicatenumberinarray {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
        // Scanner sc=new Scanner(System.in);
