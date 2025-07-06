@@ -1,5 +1,5 @@
 import java.util.*;
-public class firstandlast {
+public class firstandlastoccurance {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         // Scanner sc=new Scanner(System.in);
