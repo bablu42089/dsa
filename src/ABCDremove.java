@@ -7,8 +7,7 @@ public class ABCDremove {
         int i=0;
         while(i<res.length()-1)
         {
-            if(res.charAt(i)=='A' && res.charAt(i+1)=='B'||
-                    res.charAt(i)=='C'&& res.charAt(i+1)=='D')
+            if(res.charAt(i)=='A' && res.charAt(i+1)=='B'|| res.charAt(i)=='C'&& res.charAt(i+1)=='D')
             {
                 res.delete(i,i+2);
                 i=Math.max(0,i-1);
