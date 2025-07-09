@@ -76,7 +76,8 @@ void pd(Node node,int level)
         }
         System.out.println("|------>"+node.value);
     }
-    else {
+    else
+    {
         System.out.println(node.value);
     }
     pd(node.left,level+1);
